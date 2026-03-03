@@ -1,0 +1,159 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    background-image: url(img.jpg);
+    background-size: cover;
+}
+
+.navbar{
+    height: 60px;
+    padding: 8px 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1675b4;
+    cursor: pointer;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links li a{
+    font-size: 1.3rem;
+    color: rgb(249, 239, 240);
+    text-decoration: none;
+    transition: 0.3s ease;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.links li a:hover{
+    background: red;
+}
+
+.action{
+    padding: 4px 6px;
+    border-radius: 10px;
+    box-shadow: rgb(209, 190, 190);
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.1rem;
+    background: #ff5400;
+    transition: 0.5s ease;
+}
+
+.action:hover{
+    background: #eadfdc;
+    color: #ff5400;
+    font-size: 1.2rem ;
+}
+
+.bars{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    display: none;
+}
+
+.dropDownMenu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0px;
+    width: 300px;
+    border-radius: 10px;
+    background: #60696e;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+}
+
+.dropDownMenu.open{
+    height: 240px;
+}
+
+.dropDownMenu li{
+    padding: 0.7rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dropDownMenu li a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: 1.2s ease;
+}
+
+.dropDownMenu li a:hover{
+    color: red;
+}
+.dropDownMenu .action {
+    background: #eadfdc;
+    color: rgb(17, 41, 219);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*hero*/
+#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+/*Responsive*/
+@media(max-width: 992px) {
+    .navbar .links,
+    .navbar .action {
+        display: none;
+    }
+    .navbar .bars{
+        display: block;
+    }
+    .dropDownMenu {
+        margin-right: 12px;
+        display: block;
+    }
+}
+
+@media(max-width: 576px) {
+    .dropDownMenu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+
+
+
+
+
+

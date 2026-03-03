@@ -1,0 +1,172 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(iiimg.avif);
+    background-size: cover;
+}
+/*header*/
+header{
+    background: rgb(222, 238, 241);
+    width: 100%;
+}
+
+.navbar{
+    padding: 6px 10px;
+    margin: 0px 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 6px #bcc6c9;
+}
+
+.navbar .logo{
+    color: blue;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.navbar .logo span{
+    color: rgb(133, 133, 183);
+}
+
+.menu{
+    padding: 2px 15px;
+    margin-right: 80px;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.menu ul li{
+    list-style: none;
+    font-size: large;
+    font-weight: 500;
+}
+
+.menu ul li a{
+    padding: 6px 12px;
+    margin: 0 12px;
+    color: rgb(161, 15, 234);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.menu ul li a:hover{
+    background: white;
+}
+
+/*container*/
+.container{
+    background: linear-gradient(rgb(184, 221, 227), rgb(239, 239, 243));
+    width: 500px;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #b3b1b1;
+}
+
+.container h2{
+    color: blue;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 8px;
+}
+
+.input-group{
+    margin-top: 25px;
+}
+
+#todoInput{
+    width: 80%;
+    padding: 9px 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#addBtn{
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    background: rgb(19, 142, 236);
+    transition: 0.7s ease;
+} 
+
+#addBtn:hover{
+    color: rgb(19, 142, 236);
+    background: white ;
+}
+
+.li-item{
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 4px;
+    color: rgb(138, 5, 138);
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.deleteBtn{
+    background: rgb(212, 234, 248);
+    border: 1px solid #ccc;
+    font-size: 15px;
+    position: absolute;
+    left: 80%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.editBtn{
+    background: rgb(212, 234, 248);
+    border: 1px solid #ccc;
+    font-size: 15px;
+    position: absolute;
+    left: 75%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.editInput{
+    background: rgb(226, 241, 248);
+    padding: 4px 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: rgb(138, 5, 138);
+    font-weight: 300;
+    font-size: 15px;width: 80%;
+}
+
+.saveBtn{
+    padding: 4px 6px;
+    margin-left: 8px;
+    background: white;
+    color: rgb(161, 15, 234);
+    font-size: 15px;
+    font-weight: 300;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+
+.saveBtn:hover{
+    color: white;
+    background: rgb(161, 15, 234);
+}
