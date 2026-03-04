@@ -2,61 +2,124 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wijdane | Portfolio</title>
 
 <style>
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f6f9;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background: #111827;
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1f2937, #111827);
     color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: rgba(0,0,0,0.3);
+}
+
+nav h2 {
+    color: #60a5fa;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header p {
+    margin-top: 15px;
+    color: #d1d5db;
+}
+
+/* ABOUT */
+.about {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* SKILLS */
+.skills {
     text-align: center;
     padding: 40px 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 32px;
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-header p {
-    margin-top: 10px;
-    color: #d1d5db;
+.skill {
+    background: #374151;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
+/* PROJECTS */
 .projects {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
 .card {
-    background: white;
+    background: #1f2937;
     width: 280px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 15px;
     text-align: center;
     transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 .card h3 {
     margin-bottom: 15px;
 }
 
+.card p {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
 .card a {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
     text-decoration: none;
     background: #2563eb;
     color: white;
@@ -67,18 +130,82 @@ header p {
 .card a:hover {
     background: #1e40af;
 }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.3);
+    margin-top: 40px;
+}
+
+footer a {
+    color: #60a5fa;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav div {
+        margin-top: 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+}
 </style>
 </head>
 
 <body>
+
+<nav>
+    <h2>Wijdane</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+    </div>
+</nav>
 
 <header>
     <h1>Wijdane ES-SAFI</h1>
     <p>QA Tester | Frontend Developer in Progress</p>
 </header>
 
-<section class="projects">
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        Motivated QA Tester with a strong interest in Frontend Development.
+        I build interactive web projects using HTML, CSS, and JavaScript.
+        Passionate about clean code, testing, and improving user experience.
+    </p>
+</section>
 
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python Basics</div>
+        <div class="skill">Git</div>
+        <div class="skill">Software Testing</div>
+        <div class="skill">ISTQB</div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
     <div class="card">
         <h3>🎬 Movies App</h3>
         <p>Built with HTML, CSS and JavaScript.</p>
@@ -96,8 +223,13 @@ header p {
         <p>Responsive website design.</p>
         <a href="Travel Agency/index.html">View Project</a>
     </div>
-
 </section>
+
+<footer>
+    <p>© 2026 Wijdane ES-SAFI</p>
+    <a href="https://github.com/wijdane-09">GitHub</a>
+    <a href="PUT-YOUR-LINKEDIN-HERE">LinkedIn</a>
+</footer>
 
 </body>
 </html>
