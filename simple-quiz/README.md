@@ -17,7 +17,7 @@ A simple and interactive Quiz Application built using HTML, CSS, and JavaScript.
 ![Quiz App Screenshot](screenshot.png)
 
 ## 🔗 Live Demo
-(Add GitHub Pages link here)
+https://wijdane-09.github.io/My-Own-Projects/simple-quiz/
 
 ## 💡 What I learned
 - DOM manipulation
