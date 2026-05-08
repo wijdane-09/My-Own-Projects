@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="pngtree-search-icon-png-image_15738214.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>SearchApp</title>
+</head>
+<body>
+ <!--header-->
+<header>
+    <div class="navbar">
+        <h2><span>U</span>ser<span>A</span>pp</h2>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+ <!--main-->
+<main id="home">
+<!--search & filter app-->
+<div class="title">
+<h2>User Search & Filter App</h2>
+</div>
+<div class="container">
+<input type="text" id="input" placeholder="Search user...">
+
+<div class="buttons">
+<button data-role="all" class="active">All</button>
+<button data-role="admin">Admin</button>
+<button data-role="user">User</button>
+</div>
+
+<ul id="list">
+<li data-role="admin">AbdelHafid</li>
+<li data-role="user">Lakbira</li>
+<li data-role="admin">Soukaina</li>
+<li data-role="user">Mohammed</li>
+<li data-role="user">Wijdane</li>
+<li data-role="user">widad</li>
+</ul>
+
+<p id="results"></p>
+</div>
+
+<!--section about-->
+<section class="about" id="about">
+    <h2>About Our App</h2>
+
+    <p class="first">This is a simple User Search & Filter App built using HTML, CSS, and JavaScript</p>
+
+    <ul>
+        <li>Search users by name</li>
+        <li>Filter users by role (Admin / User)</li>
+        <li>Highlight matching resultes</li>
+        <li>Display number of results</li>
+    </ul>
+    
+    <p class="second">This project was created to practice DOM manipulation and improve JavaScript skills.</p>
+</section>
+
+<!--contact section-->
+<section class="contact" id="contact">
+    <h3>Get in Touch</h3>
+    <div class="contact-content">
+        <ul>
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                <p>+212 658 186 574</p>
+            </li>
+
+            <li>
+                <i class="fa-regular fa-envelope"></i>
+                <p>Info@userapplication.com</p>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <p>123 Campsite avenue, Wildrerne, CA 98765</p>
+            </li>
+        </ul>
+    </div>
+</section>
+</main>
+
+ <!--footer-->
+ <footer class="footer-section">
+    <div class="footer-content">
+        <p class="copyright-text">@2026 User Application</p>
+
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+ </footer>
+
+<script src="main.js"></script>
+</body>
+</html>
