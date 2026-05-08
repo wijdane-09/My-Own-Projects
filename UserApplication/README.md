@@ -17,7 +17,7 @@ An interactive and responsive User Search & Filter Application built using HTML,
 
 ## 📸 Screenshot
 
-![User Search App Screenshot](screenshot.png)
+![User Search App Screenshot]screenshot.png
 
 ## 🌐 Live Demo
 
