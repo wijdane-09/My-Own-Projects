@@ -6,162 +6,240 @@
 <title>Wijdane | Portfolio</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #1f2937, #111827);
-    color: white;
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:linear-gradient(to right,#1f2937,#111827);
+    color:white;
+    line-height:1.6;
 }
 
 /* NAVBAR */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
-    background: rgba(0,0,0,0.3);
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:rgba(0,0,0,0.3);
+    position:sticky;
+    top:0;
+    backdrop-filter:blur(10px);
+    z-index:100;
 }
 
-nav h2 {
-    color: #60a5fa;
+nav h2{
+    color:#60a5fa;
+    font-size:28px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 14px;
+nav div{
+    display:flex;
+    gap:20px;
 }
 
-nav a:hover {
-    color: #60a5fa;
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    font-size:15px;
+}
+
+nav a:hover{
+    color:#60a5fa;
 }
 
 /* HEADER */
-header {
-    text-align: center;
-    padding: 80px 20px;
+header{
+    text-align:center;
+    padding:100px 20px;
 }
 
-header h1 {
-    font-size: 40px;
+header h1{
+    font-size:50px;
+    margin-bottom:15px;
 }
 
-header p {
-    margin-top: 15px;
-    color: #d1d5db;
+header p{
+    color:#d1d5db;
+    font-size:18px;
+}
+
+.header-btn{
+    display:inline-block;
+    margin-top:25px;
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:12px 22px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.header-btn:hover{
+    background:#1e40af;
+    transform:scale(1.05);
+}
+
+/* SECTION TITLE */
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:32px;
 }
 
 /* ABOUT */
-.about {
-    max-width: 800px;
-    margin: auto;
-    padding: 40px 20px;
-    text-align: center;
+.about{
+    max-width:850px;
+    margin:auto;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.about p{
+    color:#d1d5db;
+    margin-top:20px;
+    font-size:17px;
 }
 
 /* SKILLS */
-.skills {
-    text-align: center;
-    padding: 40px 20px;
+.skills{
+    padding:60px 20px;
 }
 
-.skill-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
+.skill-list{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:30px;
 }
 
-.skill {
-    background: #374151;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 14px;
+.skill{
+    background:#374151;
+    padding:12px 22px;
+    border-radius:30px;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.skill:hover{
+    background:#2563eb;
+    transform:translateY(-5px);
 }
 
 /* PROJECTS */
-.projects {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 60px 20px;
+.projects-section{
+    padding:60px 20px;
 }
 
-.card {
-    background: #1f2937;
-    width: 280px;
-    padding: 25px;
-    border-radius: 15px;
-    text-align: center;
-    transition: 0.3s;
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    max-width:1200px;
+    margin:auto;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+.card{
+    background:#1f2937;
+    padding:25px;
+    border-radius:20px;
+    transition:0.3s;
+    text-align:center;
+    border:1px solid rgba(255,255,255,0.05);
 }
 
-.card h3 {
-    margin-bottom: 15px;
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.4);
 }
 
-.card p {
-    color: #9ca3af;
-    font-size: 14px;
+.card h3{
+    margin-bottom:15px;
+    font-size:22px;
 }
 
-.card a {
-    display: inline-block;
-    margin-top: 15px;
-    text-decoration: none;
-    background: #2563eb;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 6px;
+.card p{
+    color:#9ca3af;
+    font-size:15px;
+    min-height:50px;
 }
 
-.card a:hover {
-    background: #1e40af;
+.card a{
+    display:inline-block;
+    margin-top:20px;
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.card a:hover{
+    background:#1e40af;
+    transform:scale(1.05);
 }
 
 /* FOOTER */
-footer {
-    text-align: center;
-    padding: 30px;
-    background: rgba(0,0,0,0.3);
-    margin-top: 40px;
+footer{
+    text-align:center;
+    padding:40px 20px;
+    background:rgba(0,0,0,0.3);
+    margin-top:60px;
 }
 
-footer a {
-    color: #60a5fa;
-    text-decoration: none;
-    margin: 0 10px;
+footer p{
+    margin-bottom:15px;
+    color:#d1d5db;
 }
 
-footer a:hover {
-    text-decoration: underline;
+footer a{
+    color:#60a5fa;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+footer a:hover{
+    text-decoration:underline;
 }
 
 /* RESPONSIVE */
-@media(max-width:768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
     }
 
-    nav div {
-        margin-top: 10px;
+    nav div{
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
-    header h1 {
-        font-size: 30px;
+    header{
+        padding:70px 20px;
+    }
+
+    header h1{
+        font-size:35px;
+    }
+
+    header p{
+        font-size:16px;
+    }
+
+    .section-title{
+        font-size:28px;
     }
 }
 </style>
@@ -169,8 +247,10 @@ footer a:hover {
 
 <body>
 
+<!-- NAVBAR -->
 <nav>
     <h2>Wijdane</h2>
+
     <div>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -178,63 +258,137 @@ footer a:hover {
     </div>
 </nav>
 
+<!-- HEADER -->
 <header>
     <h1>Wijdane ES-SAFI</h1>
-    <p>QA Tester | Frontend Developer in Progress</p>
+
+    <p>
+        QA Tester | Frontend Developer in Progress
+    </p>
+
+    <a href="#projects" class="header-btn">
+        View My Projects
+    </a>
 </header>
 
+<!-- ABOUT -->
 <section id="about" class="about">
-    <h2>About Me</h2>
+
+    <h2 class="section-title">About Me</h2>
+
     <p>
         Motivated QA Tester with a strong interest in Frontend Development.
-        I build interactive web projects using HTML, CSS, and JavaScript.
-        Passionate about clean code, testing, and improving user experience.
+        I build interactive and responsive web projects using HTML, CSS,
+        and JavaScript. Passionate about clean code, software testing,
+        and improving user experience.
     </p>
+
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="skills">
-    <h2>Skills</h2>
+
+    <h2 class="section-title">Skills</h2>
+
     <div class="skill-list">
+
         <div class="skill">HTML</div>
         <div class="skill">CSS</div>
         <div class="skill">JavaScript</div>
         <div class="skill">Python Basics</div>
-        <div class="skill">Git</div>
+        <div class="skill">Git & GitHub</div>
         <div class="skill">Software Testing</div>
         <div class="skill">ISTQB</div>
+        <div class="skill">Responsive Design</div>
+
     </div>
+
 </section>
 
-<section id="projects" class="projects">
-    <div class="card">
-        <h3>🎬 Movies App</h3>
-        <p>Built with HTML, CSS and JavaScript.</p>
-        <a href="Movies/index.html">View Project</a>
-    </div>
+<!-- PROJECTS -->
+<section id="projects" class="projects-section">
 
-    <div class="card">
-        <h3>✅ Todo List App</h3>
-        <p>Interactive app with LocalStorage.</p>
-        <a href="Todo list App/index.html">View Project</a>
-    </div>
+    <h2 class="section-title">Projects</h2>
 
-    <div class="card">
-        <h3>🌍 Travel Agency</h3>
-        <p>Responsive website design.</p>
-        <a href="Travel Agency/index.html">View Project</a>
-    </div
+    <div class="projects">
 
         <div class="card">
-    <h3>User Search & Filter App</h3>
-    <p>Interactive search and filter application built with JavaScript.</p>
-    <a href="user-application/index.html" target="_blank">View Project</a>
-   </div>
+            <h3>🎬 Movies App</h3>
+
+            <p>
+                Movie application built with HTML, CSS and JavaScript.
+            </p>
+
+            <a href="Movies/index.html" target="_blank">
+                View Project
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>✅ Todo List App</h3>
+
+            <p>
+                Interactive todo app using LocalStorage.
+            </p>
+
+            <a href="todo-list-app/index.html" target="_blank">
+                View Project
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>🌍 Travel Agency</h3>
+
+            <p>
+                Responsive travel agency landing page.
+            </p>
+
+            <a href="travel-agency/index.html" target="_blank">
+                View Project
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>🧠 Simple Quiz App</h3>
+
+            <p>
+                Quiz application with score tracking and dynamic questions.
+            </p>
+
+            <a href="simple-quiz/index.html" target="_blank">
+                View Project
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>🔍 User Search & Filter App</h3>
+
+            <p>
+                Real-time search and filtering app using JavaScript.
+            </p>
+
+            <a href="user-application/index.html" target="_blank">
+                View Project
+            </a>
+        </div>
+
+    </div>
+
 </section>
 
+<!-- FOOTER -->
 <footer>
+
     <p>© 2026 Wijdane ES-SAFI</p>
-    <a href="https://github.com/wijdane-09">GitHub</a>
-    <a href="https://www.linkedin.com/in/wijdane-essafi-4717931b2/">LinkedIn</a>
+
+    <a href="https://github.com/wijdane-09" target="_blank">
+        GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/wijdane-essafi-4717931b2/" target="_blank">
+        LinkedIn
+    </a>
+
 </footer>
 
 </body>
