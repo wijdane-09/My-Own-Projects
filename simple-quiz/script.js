@@ -82,7 +82,7 @@ nextBtn.addEventListener('click', () => {
   } else {
     questions.textContent = 'Quiz finished';
     result.textContent = `Your score: ${score} / ${quiz.length}`;
-    progress.textContent = ''; // ✅ نخبيو progress فالنهاية
+    progress.textContent = ''; 
     nextBtn.disabled = true;
 
     restartBtn.style.display = 'block';
