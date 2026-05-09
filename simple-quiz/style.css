@@ -27,7 +27,7 @@ body {
   border-radius: 50% 0 0 50%;
   top: 90px;
   right: -300px;
-  z-index: 0; /* يكون ورا */
+  z-index: 0; 
 }
 
 nav {
@@ -56,11 +56,11 @@ nav {
   width: 70px;
   height: auto;
   border-radius: 50%;
-  object-fit: cover; /*  باش الصورة ماتخصرش وتحافض على الشكل*/
+  object-fit: cover; 
   box-shadow: 0 4px 10px #e0dede;
 }
 
-.links{  /*هادي هي لي كتخلي NAV ماتبقاش لاصقة على اليمين*/
+.links{  
   padding-right: 100px;
 }
 .links ul {
