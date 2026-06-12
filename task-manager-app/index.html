@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image.png">
+    <title>Task Manager</title>
+</head>
+<body>
+
+    <!-- Header -->
+      <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="image.png" alt="logo">
+                <h2>Task Manager</h2>
+            </div>
+            
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Statistics</a></li>
+            </ul>
+            
+        </nav>
+      </header>
+ 
+    <!--main-->  
+        <main>
+
+            <!--hero section-->
+            <section class="hero-section">
+                <h1>Manage Your Tasks Easily</h1>
+                <p>Organize, filter, search and track your daily tasks</p>
+            </section>
+        
+
+    <div class="container">
+        <!--statistics-->
+        <section class="statistics-section">
+
+            <h3>Task app</h3>
+
+            <div class="statistics">
+
+                <div class="total">
+                <i class="fa-solid fa-bars-progress"></i>
+                <p id="totalTasks"></p>
+                </div>
+
+                <div class="completed">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <p id="completedTasks"></p>
+                </div>
+
+                <div class="pending">
+                <i class="fa-solid fa-hourglass-half"></i>
+                <p id="pendingTasks"></p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--form-->
+
+        <section class="form-section">
+
+            <div class="forms">
+                
+                <input class="text" type="text" id="textInput" placeholder="Type here...">
+
+            <select id="category">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <select id="filterPriority">
+                <option value="all">All</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+           
+            <button id="addBtn">Add a Task</button>
+            </div>
+            
+            <div class="searching">
+
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="sortBtn">Sort By Priority</button>
+                <button id="clearBtn">Clear Completed</button>
+
+            </div>
+            
+        </section>
+
+        <!--result-->
+           <div id="taskContainer"></div> 
+    </div>
+</main>
+
+ <script src="main.js"></script>   
+</body>
+</html>

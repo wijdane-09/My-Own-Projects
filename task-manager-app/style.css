@@ -1,0 +1,382 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    background: rgb(245, 243, 243);
+    box-shadow: 0 0 3px #ccc;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 55px;
+    border-radius: 28px;
+}
+
+.logo h2 {
+    padding: 0 6px;
+    color: rgb(67, 17, 249);
+    cursor: pointer;
+}
+
+.links{
+    padding-right: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 3px 15px;
+    color: rgb(223, 14, 94);
+    font-weight: 500;
+    border-radius: 10px;
+    transition: 0.6s ease;
+}
+
+.links li a:hover {
+    background: rgb(223, 14, 94);
+    color:rgb(247, 241, 241)
+}
+
+.hero-section {
+    background: radial-gradient(rgb(235, 182, 235), white);
+    padding: 10px;
+    height: 150px;
+    box-shadow: 0 0 4px #fcd2fc;
+}
+
+.hero-section h1 {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.hero-section h1:hover {
+    color: palevioletred;
+}
+
+.hero-section p {
+    text-align: center;
+    margin-top: 6px;
+}
+
+/*Statistics*/
+.statistics-section {
+    padding: 6px;
+    margin: 6px;
+}
+
+.statistics-section h3 {
+    color: gray;
+    background: white;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.statistics-section h3:hover {
+    background: #cccacb;
+    color: white;
+}
+.statistics-section .statistics {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px  80px;
+    margin: 20px 40px;
+}
+
+.statistics-section .statistics div {
+    font-size: 1.1rem;
+    padding: 20px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px #c3c1c1;
+    transition: transform 0.3s ease;
+}
+
+.statistics-section .statistics div:hover {
+    transform: translateY(-5px);
+}
+
+.statistics-section .statistics .total {
+    background: rgb(213, 245, 213);
+}
+
+.statistics-section .statistics .total i {
+    color: rgb(10, 103, 1);
+}
+
+.statistics-section .statistics .total p {
+    color: rgb(6, 134, 12);
+}
+
+.statistics-section .statistics .completed {
+    background: rgb(252, 231, 252);
+}
+
+.statistics-section .statistics .completed i {
+    color: violet;
+}
+
+.statistics-section .statistics .completed p {
+    color: rgb(143, 4, 143);
+}
+
+.statistics-section .statistics .pending {
+    background: rgb(250, 239, 219);
+}
+
+.statistics-section .statistics .pending i {
+    color: rgb(217, 121, 3);
+}
+
+.statistics-section .statistics .pending p {
+    color: rgb(174, 97, 2);
+}
+
+.form-section {
+    padding: 6px;
+    margin: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #c0b5b5;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px #ccc;
+}
+
+.form-section .forms {
+    padding: 6px 8px;
+    border: 1px solid #c0b5b5;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgb(78, 71, 99);
+}
+
+.form-section .text {
+    width: 300px;
+    padding: 8px 4px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: small;
+}
+
+.form-section select {
+    width: 130px;
+    padding: 6px 4px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: medium;
+}
+
+.form-section #filterPriority {
+    background: #dfdfdf;
+}
+
+.form-section #addBtn {
+    display: block;
+    background: #999898;
+    color: white;
+    margin: 12px 8px;
+    padding: 8px 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #a0a0a0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.form-section #addBtn:hover {
+    transform: translateX(-6px);
+}
+
+.form-section .searching {
+    padding: 10px 15px;
+    margin-right: 15px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid rgb(77, 58, 150);
+    box-shadow: 0 2px 6px #888585;
+}
+.form-section .searching #searchInput {
+    width:250px;
+    padding: 8px 4px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: medium;
+}
+
+.form-section .searching #sortBtn {
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 6px;
+    border: 1px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: rgb(235, 182, 235);
+    transition: transform 0.2s ease;
+}
+
+.form-section .searching #sortBtn:hover  {
+    transform: translateY(-6px);
+    color: rgb(235, 182, 235);
+    background: white;
+    border: 1px solid rgb(235, 182, 235);
+}
+.form-section .searching #clearBtn {
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 6px;
+    border: 1px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: rgb(109, 3, 109);
+    transition: transform 0.2s ease;
+}
+
+.form-section .searching #clearBtn:hover {
+    transform: translateY(-6px);
+    color: rgb(109, 3, 109);
+    background: white;
+    border: 1px solid rgb(109, 3, 109);
+}
+
+#taskContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 15px;
+    border-radius: 10px;
+}
+
+/*javascript style*/
+.box {
+    border: 1px solid #ccc;
+    padding: 6px;
+    margin: 10px;
+    background: radial-gradient(white, rgb(248, 248, 216));
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #ccc;
+    transition: transform 1.2s ease;
+}
+
+.box:hover{
+    transform: translateY(-6px);
+}
+
+.title-style {
+    text-align: center;
+    color: rgb(67, 17, 249);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.category {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 8px 10px;
+    margin: 0 8px;
+    background: rgb(245, 240, 240);
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.deleteBtn {
+    margin-left: 30px;
+    padding: 6px 6px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+
+}
+
+.editBtn{
+    margin-left: 30px;
+    padding: 6px 4px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+}
+
+/*responsive*/
+@media (max-width: 768px) {
+    
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .links {
+        padding-right: 0;
+    }
+
+    .statistics {
+        padding: 10px;
+        margin: 20px 0;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .form-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .forms {
+        width: 90%;
+    }
+
+    .forms input,
+    .forms select,
+    .forms button {
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    .box {
+        margin: 0;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 25px 10px;
+    }
+
+     .hero-section h1 {
+        font-size: 1.6rem;
+     }
+}
