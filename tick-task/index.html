@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img.png">
+    <title>TickTask</title>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img.png" alt="logo">
+                <h2>TickTask</h2>
+            </div>
+
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#statistics">Statistics</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--main-->
+    <main>
+        <!--hero section-->
+        <section class="hero" id="home">
+            <h2>Stay organized every day</h2>
+            <P>Create, edit, and manage your tasks in one simple and easy-to-use app.</P>
+        </section>
+
+    <div class="container">   
+        <!--statistics section-->
+        <section class="statistics-section" id="statistics">
+
+            <h3>Task Manager</h3>
+
+            <div class="statistics">
+
+                <div class="total">
+                    <i class="fa-solid fa-bars-progress"></i>
+                    <p id="totalTasks"></p>
+                </div>
+
+                <div class="completed">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    <p id="completedTasks"></p>
+                </div>
+
+                <div class="pending">
+                    <i class="fa-solid fa-hourglass-half"></i>
+                    <p id="pendingTasks"></p>
+                </div>
+            </div>
+        </section>
+
+        <!--section forms-->
+        <section class="forms" id="tasks">
+            <div class="form-container">
+
+                <input type="text" id="textInput" placeholder="Type here...">
+
+                <!--select category-->
+                <select id="priority">
+        
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+
+                </select>
+
+                <button id="addBtn">Add a Task</button>
+
+            </div>
+
+        <!--searching-->
+            <div class="searching">
+                <input type="text" id="searchInput" placeholder="Search...">
+
+                 <!--filter category-->
+                <select id="filterPriority">
+                    <option value="all">All</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+
+                 <!--sort tasks-->
+                <select id="sortTasks">
+                    <option value="default">Default</option>
+                    <option value="highToLow">High → Low</option>
+                    <option value="lowToHigh">Low → High</option>
+                </select>
+
+                 <!--clear completed tasks-->
+                <button id="clearBtn">Clear Completed</button>
+            </div>
+        </section>
+
+        <!--result-->
+        <section id="taskContainer"></section>
+
+        <section class="about" id="about">
+
+    <img src="about.jpg" alt="about">
+
+    <div class="about-content">
+    <h2>About TickTask</h2>
+
+    <p>
+        TickTask is a simple and user-friendly task management application
+        designed to help users organize their daily work efficiently.
+    </p>
+
+    <p>
+        With TickTask, you can create tasks, set priorities, search, filter,
+        sort, edit, and track your progress in one place.
+    </p>
+
+    <p>
+        This project was built using HTML, CSS, and JavaScript to practice
+        front-end development and DOM manipulation.
+    </p>
+
+    </div>
+    </section> 
+    </main>
+<!--footer-->
+<footer>
+
+<section class="contact" id="contact">
+    <h3>Get in touch</h3>
+
+    <div class="contact-content">
+
+        <ul>
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                <p>CALL US</p>
+                <p>+212 658 186 000</p>
+            </li>
+
+            <li>
+                <i class="fa-regular fa-envelope"></i>
+                <p>CONTACT US</p>
+                <p>Info@Taskapplication.com</p>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <p>VISIT US</p>
+                <p>123 Campsite avenue, wildrerne, CA 98765</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="footer-section">
+
+    <div class="footer-content">
+
+        <p class="copyright-text">TickTask@2026 </p>
+
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</section>
+</footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
