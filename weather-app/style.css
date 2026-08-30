@@ -1,0 +1,196 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*body*/
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(background-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+/*navbar*/
+.navbar {
+    background:rgb(30, 133, 184) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.navbar .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+}
+
+.navbar .logo img {
+    width: 70px;
+    border-radius: 30px;
+}
+
+.navbar .logo h2 {
+    color: yellow;
+}
+
+.navbar .logo span {
+    color: #00f5d4;
+}
+
+.navbar .links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.navbar .links li {
+    font-size: 1.1rem;
+    margin: 6px;
+    list-style: none;
+}
+
+.navbar .links a {
+    padding: 8px 10px;
+    text-decoration: none;
+    color: yellow;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.navbar .links a:hover {
+    background: rgb(148, 207, 244);
+}
+
+/*main*/
+.date {
+   padding: 10px 8px;
+   font-weight: 600;
+   color: rgb(156, 190, 4);
+}
+
+.hero {
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+}
+
+.hero h1 {
+    color: white;
+    cursor: pointer;
+}
+
+.hero .description {
+    font-weight: 600;
+    color: rgb(156, 190, 4);
+}
+
+.weather {
+    padding: 10px 10px;
+    margin: 8px;
+}
+
+.weather .search input {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.weather .search button {
+    width: 100px;
+    padding: 8px;
+    font-weight: 600;
+    color: rgb(30, 133, 184);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 1s ease;
+}
+
+.weather .search button:hover {
+    background:rgb(30, 133, 184) ;
+    color: white;
+}
+
+.weather .weather-conditions {
+    padding: 8px;
+    margin: 8px;
+}
+
+.weather .weather-conditions #cityName {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.weather .weather-conditions #temperature {
+    padding: 6px;
+    color: white;
+}
+
+.weather .weather-conditions #wind {
+    font-size: 18px;
+    padding: 6px;
+    color: white;
+}
+
+.weather .weather-conditions #weather {
+    font-size: 18px;
+    padding: 6px;
+    color: white;
+}
+
+/*responsive*/
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar .logo img {
+        width: 50px;
+    }
+
+    .navbar .logo h2 {
+        font-size: 1.2rem;
+    }
+
+    .navbar .links {
+        gap: 10px;
+        padding-right: 0;
+    }
+
+    .navbar .links li {
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        margin: 20px 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .weather {
+        margin: 10px;
+    }
+
+    .weather .search {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .weather .search input,
+    .weather .search button {
+        width: 100%;
+    }
+}

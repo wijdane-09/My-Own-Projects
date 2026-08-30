@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg">
+    <title>WeaTher</title>
+</head>
+<body>
+
+<!--header-->
+    <header>
+        <!--navbar-->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.jpg" alt="logo">
+                <h2>Wea<span>T</span>her</h2>
+            </div>
+
+             <ul class="links">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#weather-section">Weather</a></li>
+
+           </ul>
+        </nav>
+    </header>
+
+    <!--main-->
+    <main>
+        <!--date section-->
+        <section class="date">
+
+            <div class="date">
+                <p id="date"></p>
+            </div>
+
+        </section>
+
+        <!--hero section-->
+        <section class="hero" id="home">
+
+            <h1>Discover the weather<br>of your city</h1>
+
+            <p class="description">
+
+                Search for any city and discover its current temperature,
+                wind speed, and weather conditions.
+
+            </p>
+
+        </section>
+
+        <!--weather section-->
+        <section class="weather" id="weather-section">
+
+            <!--search weather-->
+            <div class="search">
+                <input type="text" id="cityInput" placeholder="Search city">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <!--weather conditions-->
+            <div class="weather-conditions">
+                <h2 id="cityName"></h2>
+                <h3 id="temperature"></h3>
+                <p id="wind"></p>
+                <p id="weather"></p>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
