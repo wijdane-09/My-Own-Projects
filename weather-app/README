@@ -1,0 +1,71 @@
+# 🌤️ Weather App
+
+A simple and interactive weather application built with HTML, CSS, and JavaScript.
+
+The app allows users to search for any city and display its current temperature, wind speed, and weather conditions.
+
+## 📸 Screenshot
+
+![Weather App Screenshot](screenshot.png)
+
+## 🚀 Live Demo
+
+[View Live Demo](https://wijdane-09.github.io/My-Own-Projects/weather-app/)
+
+## ✨ Features
+
+- 🔎 Search for any city
+- 🌡️ Display current temperature
+- 💨 Display wind speed
+- ☁️ Display current weather conditions
+- 📅 Display the current date
+- 💾 Save the last searched city using LocalStorage
+- 📱 Responsive design
+
+## 🛠️ Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+- Fetch API
+- Async / Await
+- JSON
+- LocalStorage
+
+## 🔄 How It Works
+
+1. The user enters a city name.
+2. The app sends the city name to the Geocoding API.
+3. The API returns the city's latitude and longitude.
+4. The app uses these coordinates with the Weather API.
+5. The weather data is returned as JSON.
+6. The app displays the city, temperature, wind speed, and weather conditions.
+7. The searched city is saved in LocalStorage.
+
+## 🌐 APIs
+
+This project uses the Open-Meteo APIs:
+
+- Geocoding API — to find the latitude and longitude of the city.
+- Weather API — to retrieve the current weather data.
+
+## 📚 What I Practiced
+
+This project helped me practice:
+
+- DOM manipulation
+- Event listeners
+- Fetch API
+- Promises
+- Async / Await
+- Working with JSON data
+- Error handling with `try...catch`
+- LocalStorage
+- Working with APIs
+
+## 👩‍💻 Author
+
+**Wijdane ES-SAFI**
+
+- GitHub: [wijdane-09](https://github.com/wijdane-09)
+- LinkedIn: [Wijdane ES-SAFI](https://www.linkedin.com/in/wijdane-essafi-4717931b2/)
